@@ -4,13 +4,13 @@ def imprimir_nombres(*nombres):
     return nombres[0]
     
 
-nombres = ["Harry Houdini","Newton","David Blaine","Hawking","messi","teller","einstein","pele","juanes" ]
+nombres = ["Harry Houdini","Newton","David Blaine","Hawking","Messi","Teller","Einstein","Pele","Juanes" ]
 print(imprimir_nombres(nombres))
 
 ###Lista de los magos###
 
 def imprimir_magos():
-    nombres = ["Harry Houdini","Newton","David Blaine","Hawking","messi","teller","einstein","pele","juanes" ]
+    nombres = ["Harry Houdini","Newton","David Blaine","Hawking","Messi","Teller","Einstein","Pele","Juanes" ]
     magos = [nombres[0],nombres[2],nombres[5]]
     print(magos)
 
@@ -19,8 +19,11 @@ magos = [nombres[0],nombres[2],nombres[5]]
 
 def hacer_grandioso(*magos):
     
-    magos2 = ["El grandioso "+ magos[0][0],"El grandioso "+ magos[0][1],"El grandioso "+ magos[0][2]]
+    magos2= []
+    for i in range(len(magos[0])):
+       magos2.append(f"El grandioso {magos[0][i]}")
     return magos2
+   
 hacer_grandioso(magos)
 
 
